@@ -120,7 +120,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -167,6 +167,74 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://morae-morae.github.io/2022/09/27/How-to-make-hexo-blog-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="iziz">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="iziz's Blog">
+      <meta itemprop="description" content="hexo로 만든 블로그 입니다.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | iziz's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/09/27/How-to-make-hexo-blog-0/" class="post-title-link" itemprop="url">How to make hexo blog</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-09-27 17:06:13" itemprop="dateCreated datePublished" datetime="2022-09-27T17:06:13+09:00">2022-09-27</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://morae-morae.github.io/2022/09/27/how-to-make-hexo-blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -197,7 +265,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-09-27 16:34:15 / Modified: 16:51:32" itemprop="dateCreated datePublished" datetime="2022-09-27T16:34:15+09:00">2022-09-27</time>
+      <time title="Created: 2022-09-27 16:34:15 / Modified: 17:13:10" itemprop="dateCreated datePublished" datetime="2022-09-27T16:34:15+09:00">2022-09-27</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -220,36 +288,39 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>&lt;&lt;&lt;hexo blog 만들기&gt;&gt;&gt;<br>(hexo.io 의 documents - getting start 참고)</p>
-<p>1.들어가기 전 환경설정하기<br>dev에서<br>npm -v 로 node.js 버전확인<br>$ npm install -g hexo-cli<br>(npm 인스톨 안될 경우 sudo명령 필요 or git bash를 관리자 권한으로 열어보기)</p>
-<ol start="2">
-<li>디렉토리 생성<br>hexo init blog(와 같은 임의 디렉토리이름 지정)</li>
+<ol>
+<li><p>들어가기 전 환경설정하기<br>dev에서<br>npm -v 로 node.js 버전확인<br>$ npm install -g hexo-cli<br>(npm 인스톨 안될 경우 sudo명령 필요 or git bash를 관리자 권한으로 열어보기)</p>
+</li>
+<li><p>디렉토리 생성<br>hexo init blog(와 같은 임의 디렉토리이름 지정)</p>
+</li>
 </ol>
 <p>ls 로 디렉토리 생성 확인<br>cd blog<br>ls로 디렉토리 내 파일 확인</p>
 <ol start="3">
-<li>포스팅<br>hexo new post “My first github blog 등 임의 제목 입력”<br>$ vi source&#x2F;_posts&#x2F;My-first-github-blog.md<br>(( hexo.io 에서 front-matter참고 ))</li>
+<li>포스팅<br>hexo new post “My first github blog 등 임의 제목 입력”<br>vi source&#x2F;<em>posts&#x2F;My-first-github-blog.md<br>(hexo.io 에서 front-matter참고)</em></li>
 </ol>
 <hr>
-<p>categories:<br>“- aa”<br>“- bb”<br>등으로 카테고리 추가 가능</p>
+<p>categories<br>“- aa”</p>
+<ul>
+<li>bb<br>등으로 카테고리 추가 가능</li>
+</ul>
 <hr>
 <p>취소선 아래 포스트 내용작성<br>취소 후 다시 하고싶으면 ctrl+c 하고 다시쓰면 됨</p>
 <p>hexo generate 로 브라우저 테스트<br>hexo server 로 로컬호스트에서 확인<br>ctrl+c로 서버종료</p>
 <ol start="4">
 <li>깃헙 저장소와 헥소 프로젝트 연결하기<br>(( hexo.io 에서 one-command deployment참고 ))<br>깃헙에서 레포지토리 새로만들기 &#x2F; 레포지토리 이름을<br>github의 유저네임 똑같이 작성.github.io로 설정</li>
 </ol>
-<p>$ npm install hexo-deployer-git –save 로 설치<br>ls로 파일확인<br>vi _config.yml 로 들어가 작업</p>
+<p>$ npm install hexo-deployer-git –save 로 설치<br>ls로 파일확인<br>vi <em>config.yml 로 들어가 작업</em></p>
 <hr>
-<p>“# Site<br>title: Front-end Blog<br>subtitle: ‘hexo blog’<br>description: ‘블 로 그’<br>keywords:<br>author: iziz<br>language: en<br>timezone: ‘’</p>
-<p>“# URL<br>“## Set your site url here. For example, if you use GitHub Page, set url as ‘<a target="_blank" rel="noopener" href="https://username.github.io/project&#39;">https://username.github.io/project&#39;</a><br>url: https:&#x2F;&#x2F;유저명.github.io<br>.<br>.<br>.<br>deployment 하단 내용도 바꾸기<br>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/%EC%9C%A0%EC%A0%80%EB%AA%85/%EC%9C%A0%EC%A0%80%EB%AA%85.github.io.git">https://github.com/유저명/유저명.github.io.git</a><br>  branch: main</p>
+<p>“# Site<br>title: 타이틀 작성<br>subtitle: ‘서브타이틀 작성’<br>description: ‘설명 작성’<br>keywords:<br>author: iziz<br>language: en<br>timezone: ‘’</p>
+<p>“# URL<br>“## Set your site url here. For example, if you use GitHub Page, set url as ‘<a target="_blank" rel="noopener" href="https://username.github.io/project&#39;">https://username.github.io/project&#39;</a><br>url: https:&#x2F;&#x2F;유저명.github.io<br>.<br>.<br>.<br>deployment 하단 내용도 바꾸기<br>deploy:<br>  type: git<br>  repo: <a target="_blank" rel="noopener" href="https://github.com/%EC%9C%A0%EC%A0%80%EB%AA%85/%EC%9C%A0%EC%A0%80%EB%AA%85.github.io.git">https://github.com/유저명/유저명.github.io.git</a><br>  branch: main 으로 입력</p>
 <hr>
-<ul>
-<li>주의<br>주소는 https로 바꿔줘야 함<br>github.io 뒤에 트레일링 슬래시 붙이지 않기</li>
-</ul>
+<p><em>주의</em><br>주소는 https로 바꿔줘야 함<br>github.io 뒤에 트레일링 슬래시 붙이지 않기</p>
 <p>hexo clean 로 제너레이터 지우고<br>hexo deploy 다시</p>
 <p>새로고침은 F5 말고 ctrl+shift+r로…<br>(캐시 초기화하고 새로고침됨)</p>
 <ol start="5">
 <li>테마바꾸기<br><a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a><br>접속해서 next 테마 선택 (또는 원하는 테마 선택)<br>npm install hexo-theme-next</li>
 </ol>
-<p>vi _config.yml 들어가서<br>theme next 로 바꿔줌</p>
+<p>vi <em>config.yml 들어가서</em><br>theme next 로 바꿔줌</p>
 <p>$ hexo clean &amp;&amp; hexo generate<br>클린 -&gt; 제너레이트 두가지 실행하라는 명령어</p>
 <p>hexo server로 적용확인<br>ctrl+c로 서버 꺼줌</p>
 <p>hexo clean &amp;&amp; hexo deploy<br>깃헙 ctrl+shift+r 로 새로고침</p>
